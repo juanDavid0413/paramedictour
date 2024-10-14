@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ParamedicTOUR</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nosifer&family=WindSong:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <button id="modoOscuro" onclick="toggleModo()">🌙</button>
+
+    <header id="header">
+        <h1 class="nosifer-regular" style="display:flexbox;">Paramedic Tour sas</h1>
+        <p class="nosifer-regular">¡Descubre Medellin y Bogota con confianza con Paramedic Tour SAS!</p>
+    </header>
+<div class="contenedor">
+    <div class="item">
+        <nav id="menu">
+            <h2>MENU:</h2>
+          <ul>
+            <li><a href="#servicios">Nuestros Servicios 🗺️ </a></li>
+            <li><a href="#quienes-somos">Quienes Somos ⛑️</a></li>
+            <li><a href="#contacto">Contactanos ☎️</a></li>
+          </ul>
+        </nav>
+    </div>
+    <div class="item2">
+    </div>
+</div>  
+    <section  class="container mt-3">
+        <h2>Sobre Nosotros:</h2>
+        <p>Somos una empresa especializada en ofrecer tours privados con un enfoque unico y seguro. Nuestro principal diferenciador es la inclusion de un guia paramedico personalizado en cada viaje, garantizando la seguridad y el bienestar de nuestros clientes en todo momento. ¡Descubre Medellin y Bogota con confianza con Paramedic Tour sas!.</p>
+    </section>
+
+    <section class="container mt-4" id="servicios">
+        <h2>Nuestros Servicios:</h2>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card mb-3 h-100 service-card"  >
+                    <img src="https://i.pinimg.com/564x/4d/6b/de/4d6bdef0c10519cb1c7a224227b8f209.jpg" class="card-img-top" alt="Plan 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Rastro Escobar: Un Viaje por la Historia del Narcotraficante Más Infame del Mundo</h5>
+                        <button class="btn btn-primary" onclick="mostrarDetalles('Plan Aventura')">Ver Detalles</button>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card mb-3 h-100 service-card ">
+                    <img src="https://i.pinimg.com/564x/c8/2c/93/c82c9377a35adcf57465d144ebf0c5e8.jpg" class="card-img-top" alt="Plan 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Alas sobre Medellín: Tour en Parapente por los Cielos Paisas</h5>
+                        <button class="btn btn-primary" onclick="mostrarDetalles('Plan Cultural')">Ver Detalles</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card mb-3 h-100 service-card ">
+                    <img src="https://i.pinimg.com/enabled_hi/564x/f8/b7/26/f8b726372e25166576a4f576586d41d4.jpg" class="card-img-top" alt="Plan 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Aventura en Hacienda Nápoles, Encanto en Santorini: Tour Combinado</h5>
+                        <button class="btn btn-primary" onclick="mostrarDetalles('Plan Relax')">Ver Detalles</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card mb-3 h-100 service-card ">
+                    <img src="https://i.pinimg.com/564x/1e/90/b5/1e90b51d19b3fb7ad22205095073f004.jpg" class="card-img-top" alt="Plan 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Fiesta a Bordo: Chiva Rumbera por las Calles de Medellín</h5>
+                        <button class="btn btn-primary" onclick="mostrarDetalles('Plan Relax')">Ver Detalles</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card mb-3 h-100 service-card ">
+                    <img src="https://i.pinimg.com/564x/2a/99/59/2a9959b0b764174682c66f79cc640f91.jpg" class="card-img-top" alt="Plan 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Citytour Medellín Nocturno: Luces, Historias y Encanto</h5>
+                        <button class="btn btn-primary" onclick="mostrarDetalles('Plan Relax')">Ver Detalles</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card mb-3 h-100 service-card ">
+                    <img src="https://i.pinimg.com/736x/41/e7/2b/41e72bc61d66fea6576b8aedbcc2d8db.jpg" class="card-img-top" alt="Plan 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Pinceladas de Cambio: Graffitour por la Transformación de la Comuna 13</h5>
+                        <button class="btn btn-primary" onclick="mostrarDetalles('Plan Relax')">Ver Detalles</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card mb-3 h-100 service-card ">
+                    <img src="https://i.pinimg.com/enabled_hi/564x/54/7e/3a/547e3a1edaf8ee3fe8e995504beeaf5e.jpg" class="card-img-top" alt="Plan 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Citytour paisajes Urbanos: Un Recorrido por el Corazón de Medellín</h5>
+                        <button class="btn btn-primary" onclick="mostrarDetalles('Plan Relax')">Ver Detalles</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card mb-3 h-100 service-card ">
+                    <img src="https://i.pinimg.com/564x/da/d8/3f/dad83f8588f34a77e9a598f2a72c551c.jpg" class="card-img-top" alt="Plan 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Horizontes Elevados: Aventura en Guatapé y la Icónica Piedra del Peñol</h5>
+                        <button class="btn btn-primary" onclick="mostrarDetalles('Plan Relax')">Ver Detalles</button>
+                    </div>
+                </div>
+            </div>    
+            <div class="col-md-3">
+                <div class="card mb-3 h-100 service-card ">
+                    <img src="https://i.pinimg.com/564x/69/96/91/69969196864ddb6c9ef1dd6c9941693f.jpg" class="card-img-top" alt="Plan 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Catedral Subterránea: Explorando las Profundidades de Zipaquirá</h5>
+                        <button class="btn btn-primary" onclick="mostrarDetalles('Plan Relax')">Ver Detalles</button>
+                    </div>
+                </div>
+            </div>    
+            <div class="col-md-3">
+                <div class="card mb-3 h-100 service-card ">
+                    <img src="https://i.pinimg.com/enabled_hi/564x/5b/3c/78/5b3c783b6916df68c12b26f693c882d8.jpg" class="card-img-top" alt="Plan 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Entre Cultura y Modernidad: Citytour por Bogotá</h5>
+                        <button class="btn btn-primary" onclick="mostrarDetalles('Plan Relax')">Ver Detalles</button>
+                    </div>
+                </div>
+            </div>    
+            <div class="col-md-3">
+                <div class="card mb-3 h-100 service-card ">
+                    <img src="https://i.pinimg.com/564x/e8/68/42/e86842a0649b12dbccc3aecef3eaddae.jpg" class="card-img-top" alt="Plan 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Explorando el Parque Jaime Duque: Aventura entre Maravillas</h5>
+                        <button class="btn btn-primary" onclick="mostrarDetalles('Plan Relax')">Ver Detalles</button>
+                    </div>
+                </div>
+            </div>    
+            <div class="col-md-3">
+                <div class="card mb-3 h-100 service-card ">
+                    <img src="https://i.pinimg.com/564x/ce/3a/e6/ce3ae692ddd6cbacf7de076b1500e48c.jpg" class="card-img-top" alt="Plan 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Sabores del Campo: Tour del Café en Medellín</h5>
+                        <button class="btn btn-primary" onclick="mostrarDetalles('Plan Relax')">Ver Detalles</button>
+                    </div>
+                </div>
+            </div>    
+            <div class="col-md-3">
+                <div class="card mb-3 h-100 service-card ">
+                    <img src="https://i.pinimg.com/736x/a6/56/fa/a656fa078d77cf57c777fe544e9db8da.jpg" class="card-img-top" alt="Plan 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Rincones del Oriente: Descubre los Secretos de Antioquia</h5>
+                        <button class="btn btn-primary" onclick="mostrarDetalles('Plan Relax')">Ver Detalles</button>
+                    </div>
+                </div>
+            </div>    
+            <div class="col-md-3">
+                <div class="card mb-3 h-100 service-card ">
+                    <img src="https://i.pinimg.com/564x/44/af/a9/44afa989c28bca929266d617848cff50.jpg" class="card-img-top" alt="Plan 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Medellín desde las Alturas: Explora sus Mejores Miradores</h5>
+                        <button class="btn btn-primary" onclick="mostrarDetalles('Plan Relax')">Ver Detalles</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card mb-3 h-100 service-card ">
+                    <img src="https://i.pinimg.com/564x/6b/30/ff/6b30fffabd4a03230907e7fb42b4e950.jpg" class="card-img-top" alt="Plan 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Shopping Paradise: Descubre los Mejores Lugares para Comprar en Medellín</h5>
+                        <button class="btn btn-primary" onclick="mostrarDetalles('Plan Relax')">Ver Detalles</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card mb-3 h-100 service-card ">
+                    <img src="https://i.pinimg.com/736x/11/84/cb/1184cbe9e7c4eefc79ff1da5c434a190.jpg" class="card-img-top" alt="Plan 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Tras las Huellas del Arte: Recorrido por Museos Emblemáticos de Medellín</h5>
+                        <button class="btn btn-primary" onclick="mostrarDetalles('Plan Relax')">Ver Detalles</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card mb-3 h-100 service-card ">
+                    <img src="https://i.pinimg.com/564x/65/61/6c/65616c5ae7755db234b4984dc5745040.jpg" class="card-img-top" alt="Plan 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Encanto Colonial: Tour a Santa Fe de Antioquia</h5>
+                        <button class="btn btn-primary" onclick="mostrarDetalles('Plan Relax')">Ver Detalles</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card mb-3 h-100 service-card ">
+                    <img src="https://i.pinimg.com/736x/3f/1d/31/3f1d3191e9a0127e96409e8b1d488d58.jpg" class="card-img-top" alt="Plan 3">
+                    <div class="card-body">
+                        <h5 class="card-title">EcoAventura Arví: Descubre la Naturaleza</h5>
+                        <button class="btn btn-primary" onclick="mostrarDetalles('Plan Relax')">Ver Detalles</button>
+                    </div>
+                </div>
+            </div> 
+            <div class="col-md-3">
+                <div class="card mb-3 h-100 service-card ">
+                    <img src="https://i.pinimg.com/564x/1e/9c/2c/1e9c2cdd54e85b6949d19a48c80bf856.jpg" class="card-img-top" alt="Plan 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Locura Arquitectónica: Un Viaje girando la realidad casaloca Guatavita</h5>
+                        <button class="btn btn-primary" onclick="mostrarDetalles('Plan Relax')">Ver Detalles</button>
+                    </div>
+                </div>
+            </div>    
+        </div>
+    </section>
+<br><br><br>
+    <div class="card-img-top">
+        <div class="promo">
+        <img id="promo" src="imagenes/paramedicprom.jpeg" alt="promocion paramedic">
+        </div>
+    </div>
+
+    <section class="container mt-3" id="quienes-somos">
+        <h2>Sobre Nosotros</h2>
+        <p>Somos una empresa especializada en ofrecer tours privados con un enfoque único y seguro. Nuestro principal diferenciador es la inclusión de un guía paramédico personalizado en cada viaje, garantizando la seguridad y el bienestar de nuestros clientes en todo momento.</p>
+        
+        <h3>Nuestra Misión</h3>
+        <p>Brindar experiencias memorables mientras cuidamos de la salud y seguridad de nuestros viajeros.</p>
+    
+        <h3>Nuestra Visión</h3>
+        <p>Ser la opción preferida para quienes buscan explorar Medellín y Bogotá de manera segura y única.</p>
+    
+        <h3>Características Clave</h3>
+        <ul>
+            <li>Guías paramédicos profesionales en cada tour.</li>
+            <li>Itinerarios personalizados según tus intereses.</li>
+            <li>Transporte seguro y cómodo.</li>
+            <li>Enfoque en la cultura y la historia local.</li>
+        </ul>
+    
+        <div class="text-center">
+            <img src="imagenes/logo.jpg" alt="Nuestra Empresa" class="img-fluid rounded-circle">
+        </div>
+    </section>
+
+    <div id="contacto" class="item">
+        <h2>Contacto</h2>
+        <p>Si tienes preguntas, no dudes en contactarnos:</p>
+        
+        <a href="https://wa.me/573215522656" target="_blank" id="whatsappButton" class="whatsapp-button">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" style="width: 40px; height: 40px;">
+            Contactar por WhatsApp
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=100089687617739&mibextid=ZbWKwL" target="_blank" class="facebook-button">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" style="width: 40px; height: 40px;">
+            Contactar por Facebook
+        </a>
+        <a href="https://www.instagram.com/paramedictour.sas/" target="_blank" class="instagram-button">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" style="width: 40px; height: 40px;">
+            Contactar por Instagram
+        </a>      
+    </div>
+    
+    <footer class="bg-gr text-center p-4">
+        <p>© 2024 Paramedic Tour SAS. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+    <button id="scrollToTop" onclick="scrollToTop()" style="display: none;">Volver Arriba</button>
+</body>
+</html>
