@@ -28,11 +28,10 @@ function toggleModo() {
     const body = document.body;
     body.classList.toggle('modo-oscuro');
 
-    // Cambiar el texto del botón según el modo
     const boton = document.getElementById('modoOscuro');
     if (body.classList.contains('modo-oscuro')) {
-        boton.innerHTML = '🌞'; // Cambia el ícono al modo claro
+        boton.innerHTML = '🌞'; 
     } else {
-        boton.innerHTML = '🌙'; // Cambia el ícono al modo oscuro
+        boton.innerHTML = '🌙'; 
     }
 }
